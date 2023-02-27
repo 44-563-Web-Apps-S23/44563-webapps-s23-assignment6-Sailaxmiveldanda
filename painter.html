@@ -17,9 +17,13 @@
     <input type="button" onclick="checkPainter()" value="Check the guess">
 </form>
 <p id="results">The count of good and oops guess </p>
+<div class="container">
+    <img src="Images/valerian.jpg"  width="100" height="100" id="img1" onclick="selectImage()">
+</div>
 <script> 
 var good = 0;
 var oops=0;
+var count=0;
 function checkPainter(){
     console.log("Getting form values")
     PainterName = document.getElementById("Painter").value
@@ -37,11 +41,6 @@ function checkPainter(){
         out.innerHTML = "Correct Answer: " +good + " "+  "Wrong Answer: " + oops;
     }
 }
-</script>
-<div class="container">
-    <img src="Images/valerian.jpg"  width="100" height="100" id="img1" onclick="selectImage()">
-</div>
-<script>
     var useImage=1;
     function selectImage(){
         switch(useImage){
