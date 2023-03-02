@@ -4,7 +4,6 @@
     <title> Painter.html Page</title>
  </head>
 <body>
-<div class="bg-light text-dark p-2 text-left">
 <h2>Painter Entry Sailaxmi Veldanda</h2>
 </div>
 <form>
@@ -28,7 +27,6 @@ function checkPainter(){
     console.log("Getting form values")
     PainterName = document.getElementById("Painter").value
     guesspaintername = document.getElementById("guessPainter").value
-    confirmed = confirm("Are these the values? "+PainterName+" and "+guesspaintername)
     out = document.getElementById("results")
     if(PainterName == guesspaintername){
         alert("You got it right")
